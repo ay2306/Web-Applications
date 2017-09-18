@@ -1,0 +1,124 @@
+<html>
+<head>
+<title>Tic Tac Toe</title>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"><link rel="stylesheet" href="style.css"/>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+<script src="jquery.js"></script>
+<script src="script.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<br><br>
+<div id='choice' class='container-fluid'>
+    <section id='choice_heading'><center>Please choose the icon to play with</center></section>
+    <br>
+<div id="X" class='col-xs-6 choice_compartment'><center><b>X</b></center></div>
+<div id="O" class='col-xs-6 choice_compartment'><center><b>O</b></center></div>
+</div>
+
+<div id='first_move_choice' class='container-fluid'>
+    <section id='firstMove_choice_heading'>Please choose who should play first</section>
+    <br>
+    <button id="player" class='btn btn-primary col-md-5 col-xs-12 firstMove_choice_compartment'><center>Player</center></button>
+    <div class="col-md-2 col-xs-12"><center>&nbsp</center></div>
+    <button id="computer" class='btn btn-primary col-xs-12 col-md-5 firstMove_choice_compartment'><center>Computer</center></button>
+</div>
+
+
+<div id='mainWindow' style="margin-top:0">
+
+<div id="scoreBox" class='container-fluid'>
+    <div class='col-xs-6'>
+        <center>Player</center>
+        <br>
+        <section id='playerScore'></section>
+    </div>
+    <div class='col-xs-6'>
+        <center>Computer</center>
+        <br>
+        <section id='computerScore'></section>
+    </div>
+</div>
+<br><br>    
+<div id="mainBox" class="container-fluid">
+<center id="turn_showing_box">&nbsp</center>
+<div class="compartment col-xs-4" id='_1'><center>&nbsp</center></div>
+<div class="compartment col-xs-4" id='_2'><center>&nbsp</center></div>
+<div class="compartment col-xs-4" id='_3'><center>&nbsp</center></div>
+<div class="compartment col-xs-4" id='_4'><center>&nbsp</center></div>
+<div class="compartment col-xs-4" id='_5'><center>&nbsp</center></div>
+<div class="compartment col-xs-4" id='_6'><center>&nbsp</center></div>
+<div class="compartment col-xs-4" id='_7'><center>&nbsp</center></div>
+<div class="compartment col-xs-4" id='_8'><center>&nbsp</center></div>
+<div class="compartment col-xs-4" id='_9'><center>&nbsp</center></div>
+<br>
+</div>
+</div>
+<!--Modal asking for difficulty level    -->
+<!-- Button trigger modal -->
+<button id="difficulty-modal-launcher" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#difficulty-Modal">
+&nbsp
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="difficulty-Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal-dialog" role="document">
+    <div class="modal-content">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel"><center>Choose difficulty to play with</center></h4>
+    </div>
+    <div class="modal-body">
+        <div class='container-fluid' id='something_random'>
+            <center><button id = 'easy' class='btn btn-primary col-xs-12' data-dismiss="modal"><center>Easy</center></button></center>
+            <br><br>
+            <center><button id = 'medium' class='btn btn-primary col-xs-12' data-dismiss="modal"><center>Medium</center></button></center>
+            <br><br>
+            <center><button id = 'hard' class='btn btn-primary col-xs-12' data-dismiss="modal"><center>Hard</center></button></center>
+        </div>
+    </div>
+    </div>
+</div>
+</div>
+<!-- -->
+<!--This section is displayed when victory is confirmed-->
+<!-- Button trigger modal -->
+<button id='modal-launcher' type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal-dialog" role="document">
+    <div class="modal-content">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    </div>
+    <div class="modal-body">
+        <center><h1 id='gameDeclaration'></h1></center>
+        
+    </div>
+    <div class="modal-footer">
+        <center id="resetGame"><button class="btn btn-primary" data-dismiss='modal'>Reset</button></center>
+        <br>
+        <center id="set_difficulty"><button class="btn btn-primary">Change Difficulty</button></center>
+        <div id="s_d" class="container-fluid">
+        <center id="e"><button class="btn btn-primary col-xs-12 col-md-4" data-dismiss='modal'>Easy</button></center>
+        <center id="m"><button class="btn btn-primary col-xs-12 col-md-4" data-dismiss='modal'>Medium</button></center>
+        <center id="h"><button class="btn btn-primary col-xs-12 col-md-4" data-dismiss='modal'>Hard</button></center>
+        </div>
+        <br>
+        <center id="set_symbol"><button class="btn btn-primary">Change Symbol(X/O)</button></center>
+        <div id="s_s" class="container-fluid">
+        <center id="o_s"><button class="btn btn-primary col-xs-12 col-md-6" data-dismiss='modal'>O</button></center>
+        <center id="x_s"><button class="btn btn-primary col-xs-12 col-md-6" data-dismiss='modal'>X</button></center>
+        </div>
+    </div>
+    </div>
+</div>
+</div>
+
+</body>
+
+</html>

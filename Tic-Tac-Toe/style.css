@@ -1,0 +1,152 @@
+body{
+  background-color: #A9CCE3;
+}
+#navBar{
+  background-color: #330066;
+  
+}
+#_1{
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+#_2{
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+}
+
+#_3{
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+}
+
+#_4{
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+}
+
+#_5{
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  border-top: 2px solid black;
+}
+
+#_6{
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  border-top: 2px solid black;
+}
+
+#_7{
+  border-right: 2px solid black;
+  border-top: 2px solid black;
+}
+
+#_8{
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+  border-top: 2px solid black;
+}
+
+#_9{
+  border-left: 2px solid black;
+  border-top: 2px solid black;
+}
+
+
+#mainBox{
+  font-size:350%;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+#scoreBox{      
+    border: 2px solid black;    
+    margin-left:15%;
+    margin-right:15%;
+    font-size: 15px;
+}
+
+
+#choice{
+  font-size:150%;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top :17%;
+  margin-bottom: 10%;
+  padding: 3%;
+}
+
+#first_move_choice{
+  font-size:150%;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top :17%;
+  margin-bottom: 10%;
+  padding: 3%;
+}
+
+#O{
+    margin-left: 2px solid black;
+}
+#X{
+    margin-right: 2px solid black;
+}
+#computer{
+    margin-left: 2px solid black;
+}
+#player{
+    margin-right: 2px solid black;
+}
+
+.compartment{
+  cursor:pointer;
+  cursor:hand;
+}
+.choice_compartment{
+  cursor:pointer;
+  cursor:hand;
+  font-size:250%;
+}
+.firstMove_choice_compartment{
+  cursor:pointer;
+  cursor:hand;
+}
+a{
+  cursor:pointer;
+  cursor:hand;
+}
+@media screen and (min-width: 768px){
+  #mainBox{
+    margin-left:35%;
+    margin-right:35%;
+  }
+  #scoreBox{      
+    margin-left:35%;
+    margin-right:35%;
+	font-size:40px;
+  }
+  #choice{
+    margin-left:35%;
+    margin-right:35%;
+    margin-top :8%;
+  }
+  #first_move_choice{
+    margin-top :8%;
+  }
+}
+
+#turn_showing_box{
+    border-radius: 15px 15px 2px 2px;
+    background-color:black;
+    color:white;
+    margin-bottom: 1%;  
+    font-size : 50%;
+}
+
+#something_random{
+    padding: 30%;   
+}
